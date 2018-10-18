@@ -70,3 +70,18 @@ btnsubmit.onclick = function () {
 
     }
 }
+var btnreset =document.forms ["register-form"] ["btn-reset"]
+btnreset.onclick = function () {
+    var txtusername = document.forms["register-form"] ["username"];
+    var msgusername = txtusername.nextElementSibling;
+    msgusername.classList.add("hidden-text");
+    var txtPassword = document.forms["register-form"] ["password"];
+    var msgpassword = txtPassword.nextElementSibling;
+    msgpassword.classList.add("hidden-text");
+    var txtfullname = document.forms["register-form"] ["fullname"];
+    var msgfullname = txtfullname.nextElementSibling;
+    msgfullname.classList.add("hidden-text");
+    var txtEmail = document.forms["register-form"]["email"];
+    var msgEmail = txtEmail.nextElementSibling;
+    msgEmail.classList.add("hidden-text");
+}
